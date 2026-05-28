@@ -7,9 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .hero-bg {
-            background: linear-gradient(135deg, #14532d 0%, #064e3b 100%);
-        }
+        .hero-bg { background: linear-gradient(135deg, #14532d 0%, #064e3b 100%); }
+        details summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans antialiased">
@@ -17,9 +16,7 @@
     <header class="bg-white border-b border-stone-200 sticky top-0 z-40 shadow-xs">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center text-white shadow-md">
-                    <i class="fa-solid fa-wheat-awn text-xl"></i>
-                </div>
+                <div class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center text-white shadow-md"><i class="fa-solid fa-wheat-awn text-xl"></i></div>
                 <div>
                     <h1 class="text-xl font-bold text-green-900 tracking-tight">Kisan Mitra</h1>
                     <p class="text-xs text-green-700 font-medium -mt-1">किसान का सच्चा साथी</p>
@@ -31,85 +28,65 @@
         </div>
     </header>
 
-    <section class="hero-bg text-white py-12 px-4 shadow-inner">
+    <section class="hero-bg text-white py-12 px-4">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
             <div class="w-44 h-44 shrink-0 rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl relative">
-                <img src="https://drive.google.com/uc?export=view&id=1TUSJMgS4oUTPCQHpUdJZQo8rQr1yEC_A" alt="Dev Godara" class="w-full h-full object-cover">
+                <img src="Screenshot_2026-05-28-18-31-34-11_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="Dev Godara" class="w-full h-full object-cover">
                 <div class="absolute bottom-0 inset-x-0 bg-black/50 text-center py-0.5 text-[10px] uppercase tracking-wider font-semibold text-green-400">Verified Expert</div>
             </div>
             <div class="text-center md:text-left flex-1">
                 <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1 rounded-full border border-emerald-500/30">आधुनिक कृषि सलाह</span>
                 <h2 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">देव गोदारा (Dev Godara)</h2>
-                <p class="text-emerald-100/90 text-base md:text-lg mt-2 max-w-xl leading-relaxed">
-                    सही दवाई, उन्नत खाद, उत्तम बीज और सटीक वैज्ञानिक सलाह के साथ आपकी खेती को बनाएं मुनाफे का सौदा। आज ही संपर्क करें।
-                </p>
-                <div class="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
-                    <a href="https://wa.me/917877816116" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl transition shadow-md flex items-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> व्हाट्सएप पर बात करें
-                    </a>
-                </div>
+                <p class="text-emerald-100/90 text-base md:text-lg mt-2 max-w-xl leading-relaxed">सही दवाई, उन्नत खाद, उत्तम बीज और सटीक वैज्ञानिक सलाह के साथ आपकी खेती को बनाएं मुनाफे का सौदा।</p>
             </div>
         </div>
     </section>
 
     <main class="max-w-5xl mx-auto px-4 py-12">
-        <div class="text-center mb-10">
-            <h3 class="text-2xl font-bold text-stone-900">हमारी कृषि सेवाएं और समाधान</h3>
-            <div class="h-1 w-16 bg-green-600 mx-auto mt-2 rounded-full"></div>
-        </div>
+        <div class="text-center mb-10"><h3 class="text-2xl font-bold text-stone-900">क्लिक करके हमारी सेवाएं देखें</h3></div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div class="bg-white rounded-2xl p-6 shadow-xs border border-stone-100 hover:shadow-md transition flex gap-4">
-                <div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center shrink-0">
-                    <i class="fa-solid fa-flask-vial text-xl"></i>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold text-stone-900">कृषि दवाइयां (Crop Protection)</h4>
-                    <p class="text-stone-600 text-sm mt-1 leading-relaxed">फसलों को दीमक, सुंडी, फंगस और खरपतवार से बचाने के लिए सही और सटीक कीटनाशकों (Pesticides) की जानकारी।</p>
-                </div>
-            </div>
+        <div class="grid grid-cols-1 gap-4">
+            <!-- Service Card 1 -->
+            <details class="group bg-white p-6 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg">
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center"><i class="fa-solid fa-flask-vial text-xl"></i></div>कृषि दवाइयां (Crop Protection)</div>
+                    <i class="fa-solid fa-chevron-down text-stone-400 group-open:rotate-180 transition"></i>
+                </summary>
+                <p class="text-stone-600 mt-4 border-t pt-4 leading-relaxed">फसलों को दीमक, सुंडी, फंगस और खरपतवार से बचाने के लिए सही और सटीक कीटनाशकों (Pesticides) की पूरी जानकारी यहाँ दी जाती है ताकि फसल सुरक्षित रहे।</p>
+            </details>
 
-            <div class="bg-white rounded-2xl p-6 shadow-xs border border-stone-100 hover:shadow-md transition flex gap-4">
-                <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center shrink-0">
-                    <i class="fa-solid fa-seedling text-xl"></i>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold text-stone-900">उन्नत खाद (Fertilizers)</h4>
-                    <p class="text-stone-600 text-sm mt-1 leading-relaxed">जैविक खाद, एनपीके, यूरिया और सूक्ष्म पोषक तत्वों का सही संतुलन ताकि मिट्टी की उपजाऊ शक्ति बनी रहे और पैदावार बढ़े।</p>
-                </div>
-            </div>
+            <!-- Service Card 2 -->
+            <details class="group bg-white p-6 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg">
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center"><i class="fa-solid fa-seedling text-xl"></i></div>उन्नत खाद (Fertilizers)</div>
+                    <i class="fa-solid fa-chevron-down text-stone-400 group-open:rotate-180 transition"></i>
+                </summary>
+                <p class="text-stone-600 mt-4 border-t pt-4 leading-relaxed">जैविक खाद, एनपीके, यूरिया और सूक्ष्म पोषक तत्वों का सही संतुलन ताकि मिट्टी की उपजाऊ शक्ति बनी रहे और पैदावार बढ़े।</p>
+            </details>
 
-            <div class="bg-white rounded-2xl p-6 shadow-xs border border-stone-100 hover:shadow-md transition flex gap-4">
-                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
-                    <i class="fa-solid fa-sprout text-xl"></i>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold text-stone-900">उच्च गुणवत्ता बीज (High-Quality Seeds)</h4>
-                    <p class="text-stone-600 text-sm mt-1 leading-relaxed">कम पानी में अधिक पैदावार देने वाले रिसर्च और हाइब्रिड बीजों का सही चयन, जो मौसम के अनुकूल हों।</p>
-                </div>
-            </div>
+            <!-- Service Card 3 -->
+            <details class="group bg-white p-6 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg">
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center"><i class="fa-solid fa-sprout text-xl"></i></div>उच्च गुणवत्ता बीज (High-Quality Seeds)</div>
+                    <i class="fa-solid fa-chevron-down text-stone-400 group-open:rotate-180 transition"></i>
+                </summary>
+                <p class="text-stone-600 mt-4 border-t pt-4 leading-relaxed">कम पानी में अधिक पैदावार देने वाले रिसर्च और हाइब्रिड बीजों का सही चयन, जो हमारे क्षेत्र के मौसम के पूरी तरह अनुकूल हों।</p>
+            </details>
 
-            <div class="bg-white rounded-2xl p-6 shadow-xs border border-stone-100 hover:shadow-md transition flex gap-4">
-                <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-                    <i class="fa-solid fa-comments text-xl"></i>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold text-stone-900">खेती सलाह (Expert Advice)</h4>
-                    <p class="text-stone-600 text-sm mt-1 leading-relaxed">फसल चक्र, बुवाई के सही समय, रोग प्रबंधन और सरकारी योजनाओं से जुड़ी हर छोटी-बड़ी जानकारी सीधे देव गोदारा से पाएं।</p>
-                </div>
-            </div>
+            <!-- Service Card 4 -->
+            <details class="group bg-white p-6 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition">
+                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg">
+                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center"><i class="fa-solid fa-comments text-xl"></i></div>खेती सलाह (Expert Advice)</div>
+                    <i class="fa-solid fa-chevron-down text-stone-400 group-open:rotate-180 transition"></i>
+                </summary>
+                <p class="text-stone-600 mt-4 border-t pt-4 leading-relaxed">फसल चक्र, बुवाई के सही समय, रोग प्रबंधन और सरकारी योजनाओं से जुड़ी हर छोटी-बड़ी जानकारी सीधे देव गोदारा से पाएं।</p>
+            </details>
         </div>
     </main>
 
-    <a href="https://wa.me/917877816116" target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition transform hover:scale-110 z-50 animate-bounce">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
     <footer class="bg-stone-900 text-stone-400 text-center py-6 border-t border-stone-800 text-sm">
-        <p class="font-medium text-stone-300">© 2026 Kisan Mitra - सर्वाधिकार सुरक्षित।</p>
-        <p class="text-xs mt-1 text-stone-500">Designed for Dev Godara</p>
+        <p class="font-medium text-stone-300">© 2026 Kisan Mitra</p>
     </footer>
 
 </body>
-    </html>
-                        
+</html>
