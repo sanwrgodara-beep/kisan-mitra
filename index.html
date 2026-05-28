@@ -1,92 +1,129 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Godara - Kisan Mitra</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Dev Choudhary | Agri-Business Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .hero-bg { background: linear-gradient(135deg, #14532d 0%, #064e3b 100%); }
-        details summary::-webkit-details-marker { display: none; }
-    </style>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-900 font-sans">
 
-    <header class="bg-white border-b border-stone-200 sticky top-0 z-40 shadow-xs">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center text-white shadow-md"><i class="fa-solid fa-wheat-awn text-xl"></i></div>
-                <div>
-                    <h1 class="text-xl font-bold text-green-900 tracking-tight">Kisan Mitra</h1>
-                    <p class="text-xs text-green-700 font-medium -mt-1">किसान का सच्चा साथी</p>
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-black text-emerald-900 tracking-tighter">DEV CHOUDHARY</h1>
+            <a href="https://wa.me/917877816116" class="bg-emerald-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-emerald-700 transition shadow-lg">Contact Now</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="relative bg-slate-900 text-white py-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+            <div class="w-56 h-56 rounded-3xl border-4 border-emerald-500 overflow-hidden shadow-2xl rotate-3">
+                <img src="Screenshot_2026-05-28-18-31-34-11_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <span class="bg-emerald-500/20 text-emerald-300 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Licensed Agri-Professional</span>
+                <h2 class="text-5xl md:text-6xl font-black mt-4 mb-6">Innovative Agri-Solutions</h2>
+                <p class="text-slate-300 text-lg mb-8 max-w-xl">Bridging the gap between premium agricultural brands and field-level farmers with technical expertise and professional licensing.</p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="https://www.instagram.com/ig_dev.choudhary07" class="border border-slate-700 px-6 py-3 rounded-xl hover:bg-slate-800 transition"><i class="fa-brands fa-instagram text-pink-500 mr-2"></i> Instagram</a>
+                    <a href="https://wa.me/917877816116" class="bg-emerald-500 px-6 py-3 rounded-xl font-bold hover:bg-emerald-400 transition"><i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Expert</a>
                 </div>
             </div>
-            <a href="tel:7877816116" class="bg-green-700 hover:bg-green-800 text-white font-medium text-sm px-4 py-2 rounded-full transition shadow-sm flex items-center gap-2">
-                <i class="fa-solid fa-phone text-xs"></i> 78778 16116
-            </a>
         </div>
     </header>
 
-    <section class="hero-bg text-white py-12 px-4">
-        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
-            <div class="w-44 h-44 shrink-0 rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl relative">
-                <img src="Screenshot_2026-05-28-18-31-34-11_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="Dev Godara" class="w-full h-full object-cover">
-                <div class="absolute bottom-0 inset-x-0 bg-black/50 text-center py-0.5 text-[10px] uppercase tracking-wider font-semibold text-green-400">Verified Expert</div>
-            </div>
-            <div class="text-center md:text-left flex-1">
-                <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1 rounded-full border border-emerald-500/30">आधुनिक कृषि सलाह</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">देव गोदारा (Dev Godara)</h2>
-                <p class="text-emerald-100/90 text-base md:text-lg mt-2 max-w-xl leading-relaxed">सही दवाई, उन्नत खाद, उत्तम बीज और सटीक वैज्ञानिक सलाह के साथ आपकी खेती को बनाएं मुनाफे का सौदा।</p>
-            </div>
-        </div>
-    </section>
-
-    <main class="max-w-5xl mx-auto px-4 py-12">
-        <div class="text-center mb-10"><h3 class="text-2xl font-bold text-stone-900">क्लिक करके हमारी सेवाएं देखें</h3></div>
-
-        <div class="grid grid-cols-1 gap-4">
-            <!-- Service Card 1 -->
-            <details class="group bg-white p-6 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition">
-                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg">
-                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center"><i class="fa-solid fa-flask-vial text-xl"></i></div>कृषि दवाइयां (Crop Protection)</div>
-                    <i class="fa-solid fa-chevron-down text-stone-400 group-open:rotate-180 transition"></i>
+    <!-- Main Content with Expanding Columns -->
+    <main class="max-w-5xl mx-auto px-6 py-20">
+        <h3 class="text-3xl font-bold text-center mb-16 underline decoration-emerald-500 decoration-4 underline-offset-8">Our Field Services</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Service 1 -->
+            <details class="bg-white p-8 rounded-3xl border border-slate-200 shadow-md group open:shadow-2xl transition-all duration-300">
+                <summary class="list-none flex justify-between items-center cursor-pointer font-bold text-xl">
+                    <span><i class="fa-solid fa-flask-vial text-emerald-600 mr-4"></i> Pesticides Supply Chain</span>
+                    <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
                 </summary>
-                <p class="text-stone-600 mt-4 border-t pt-4 leading-relaxed">फसलों को दीमक, सुंडी, फंगस और खरपतवार से बचाने के लिए सही और सटीक कीटनाशकों (Pesticides) की पूरी जानकारी यहाँ दी जाती है ताकि फसल सुरक्षित रहे।</p>
+                <div class="mt-6 pt-6 border-t border-slate-100 text-slate-600 space-y-4">
+                    <p>We provide authorized, premium-grade pesticides directly sourced from industry-leading companies to ensure crop safety.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Fungicide, Insecticide & Herbicide distribution.</li>
+                        <li>Technical dosage guidance for every crop stage.</li>
+                        <li>Genuine, seal-packed products with long expiry.</li>
+                    </ul>
+                    <a href="https://wa.me/917877816116" class="block bg-emerald-50 text-emerald-700 text-center py-3 rounded-xl font-bold mt-4">Order Now →</a>
+                </div>
             </details>
 
-            <!-- Service Card 2 -->
-            <details class="group bg-white p-6 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition">
-                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg">
-                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center"><i class="fa-solid fa-seedling text-xl"></i></div>उन्नत खाद (Fertilizers)</div>
-                    <i class="fa-solid fa-chevron-down text-stone-400 group-open:rotate-180 transition"></i>
+            <!-- Service 2 -->
+            <details class="bg-white p-8 rounded-3xl border border-slate-200 shadow-md group open:shadow-2xl transition-all duration-300">
+                <summary class="list-none flex justify-between items-center cursor-pointer font-bold text-xl">
+                    <span><i class="fa-solid fa-seedling text-emerald-600 mr-4"></i> Soil & Seed Management</span>
+                    <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
                 </summary>
-                <p class="text-stone-600 mt-4 border-t pt-4 leading-relaxed">जैविक खाद, एनपीके, यूरिया और सूक्ष्म पोषक तत्वों का सही संतुलन ताकि मिट्टी की उपजाऊ शक्ति बनी रहे और पैदावार बढ़े।</p>
+                <div class="mt-6 pt-6 border-t border-slate-100 text-slate-600 space-y-4">
+                    <p>Comprehensive soil analysis and selection of high-yield, climate-resilient hybrid seeds.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Micro-nutrient deficiency analysis.</li>
+                        <li>High-germination hybrid seeds.</li>
+                        <li>Custom fertilizer programs per crop cycle.</li>
+                    </ul>
+                    <a href="https://wa.me/917877816116" class="block bg-emerald-50 text-emerald-700 text-center py-3 rounded-xl font-bold mt-4">Consult Now →</a>
+                </div>
             </details>
 
-            <!-- Service Card 3 -->
-            <details class="group bg-white p-6 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition">
-                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg">
-                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center"><i class="fa-solid fa-sprout text-xl"></i></div>उच्च गुणवत्ता बीज (High-Quality Seeds)</div>
-                    <i class="fa-solid fa-chevron-down text-stone-400 group-open:rotate-180 transition"></i>
+            <!-- Service 3 -->
+            <details class="bg-white p-8 rounded-3xl border border-slate-200 shadow-md group open:shadow-2xl transition-all duration-300">
+                <summary class="list-none flex justify-between items-center cursor-pointer font-bold text-xl">
+                    <span><i class="fa-solid fa-chalkboard-user text-emerald-600 mr-4"></i> Technical Consultation</span>
+                    <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
                 </summary>
-                <p class="text-stone-600 mt-4 border-t pt-4 leading-relaxed">कम पानी में अधिक पैदावार देने वाले रिसर्च और हाइब्रिड बीजों का सही चयन, जो हमारे क्षेत्र के मौसम के पूरी तरह अनुकूल हों।</p>
+                <div class="mt-6 pt-6 border-t border-slate-100 text-slate-600 space-y-4">
+                    <p>Licensed professional advice to secure your investments and handle government-verified agricultural processes.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Government scheme documentation support.</li>
+                        <li>Field visits and crop health audits.</li>
+                        <li>Advanced irrigation & technology advice.</li>
+                    </ul>
+                    <a href="https://wa.me/917877816116" class="block bg-emerald-50 text-emerald-700 text-center py-3 rounded-xl font-bold mt-4">Schedule Visit →</a>
+                </div>
             </details>
 
-            <!-- Service Card 4 -->
-            <details class="group bg-white p-6 rounded-2xl shadow-xs border border-stone-100 hover:shadow-md transition">
-                <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-lg">
-                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center"><i class="fa-solid fa-comments text-xl"></i></div>खेती सलाह (Expert Advice)</div>
-                    <i class="fa-solid fa-chevron-down text-stone-400 group-open:rotate-180 transition"></i>
+            <!-- Service 4 -->
+            <details class="bg-white p-8 rounded-3xl border border-slate-200 shadow-md group open:shadow-2xl transition-all duration-300">
+                <summary class="list-none flex justify-between items-center cursor-pointer font-bold text-xl">
+                    <span><i class="fa-solid fa-handshake text-emerald-600 mr-4"></i> Corporate Partnerships</span>
+                    <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
                 </summary>
-                <p class="text-stone-600 mt-4 border-t pt-4 leading-relaxed">फसल चक्र, बुवाई के सही समय, रोग प्रबंधन और सरकारी योजनाओं से जुड़ी हर छोटी-बड़ी जानकारी सीधे देव गोदारा से पाएं।</p>
+                <div class="mt-6 pt-6 border-t border-slate-100 text-slate-600 space-y-4">
+                    <p>Building strong trade relationships with agricultural corporations to offer best prices and bulk supplies.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Direct bulk sales and corporate trade.</li>
+                        <li>Inventory management for agri-retailers.</li>
+                        <li>Competitive pricing for major brands.</li>
+                    </ul>
+                    <a href="https://wa.me/917877816116" class="block bg-emerald-50 text-emerald-700 text-center py-3 rounded-xl font-bold mt-4">Talk to me →</a>
+                </div>
             </details>
+
         </div>
     </main>
 
-    <footer class="bg-stone-900 text-stone-400 text-center py-6 border-t border-stone-800 text-sm">
-        <p class="font-medium text-stone-300">© 2026 Kisan Mitra</p>
+    <!-- Final CTA -->
+    <section class="bg-emerald-800 text-white py-16 text-center px-6">
+        <h3 class="text-3xl font-bold mb-6">Ready to improve your harvest?</h3>
+        <p class="mb-8 opacity-90 italic">Contact for a professional field assessment today.</p>
+        <a href="https://wa.me/917877816116" class="bg-white text-emerald-900 px-10 py-4 rounded-full font-black text-lg hover:scale-105 transition">Connect Now on WhatsApp</a>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-500 py-12 text-center text-sm">
+        <p>&copy; 2026 Dev Choudhary Professional Services | Licensed Agri-Consultant</p>
     </footer>
 
 </body>
 </html>
+
